@@ -1,0 +1,47 @@
+body {
+    align-items: center;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding: 25px;
+    width: 100%;
+  }
+  #board td {
+    width: 60px; 
+    height: 60px;  
+    border: solid 1px #666;   
+    background-color: white;  
+    border: 10px solid navy;  
+    border-radius: 50%;  
+  }
+  .piece {
+    height: 50px;
+    width: 50px;
+  /* TODO: make into circles */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
+}
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.piece.p1 {
+  background-color: red;
+}
+.piece.p2 {
+  background-color: yellow;
+}
+/* column-top is table row of clickable areas for each column */
+#column-top td {
+  border: dashed 5px rgb(97, 96, 96);
+  border-radius: 10%;
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+}
+#column-top td:hover {
+  background-color: gold;
+}
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
